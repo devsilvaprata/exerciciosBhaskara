@@ -3,9 +3,9 @@
 segundo grau e mostre o valor de Delta.
 '''
 
-a = float(input())
-b = float(input())
-c = float(input())
+a = float(input('a:'))
+b = float(input('b:'))
+c = float(input('c:'))
 
 delta = float((b ** 2) - 4 * a * c)
 

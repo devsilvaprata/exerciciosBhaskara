@@ -11,8 +11,7 @@ delta = float((b ** 2) - 4 * a * c)
 
 print(f'o Delta é:{delta}')
 
-import math
-squareDelta = math.sqrt(delta)
+squareDelta = float(delta) ** 0.5
 
 print(f'A raiz quadrada de Delta é: {squareDelta}')
 

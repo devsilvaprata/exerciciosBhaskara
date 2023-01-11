@@ -7,14 +7,13 @@ a = float(input('a:'))
 b = float(input('b:'))
 c = float(input('c:'))
 
-delta = float((b ** 2) - 4 * a * c)
+delta = (b ** 2) - 4 * a * c
 
-print(f'o Delta é:{delta}')
+if delta < 0:
+    print('não tem raiz de numero negativo')
 
-squareDelta = float(delta) ** 0.5
+else:
+    x1 = (- b + delta ** (1 / 2)) // (2 * a)
+    x2 = (- b - delta ** (1 / 2)) // (2 * a)
 
-print(f'A raiz quadrada de Delta é: {squareDelta}')
-
-x1 = (-b + squareDelta) / 2 . a
-
-print(f'O x1 é: {x1}')
+print(f' x1 é: {x1} e x2 é: {x2}')
